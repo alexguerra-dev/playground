@@ -16,12 +16,16 @@ const tick = () => {
 }
 
 const blob = (x, y, r) => {
-    fill(255, 0, 0)
+    fill(makeRandomColor())
     noStroke()
     ellipse(x, y, r, r)
     ellipse(x + 70, y, r, r)
     ellipse(x + 70, y, r + 40, r)
     ellipse(x + 70, y + 30, r + 10, r + 40)
+}
+
+const makeRandomColor = () => {
+    return color(random(40), random(255), random(255))
 }
 
 function setup() {
@@ -35,7 +39,10 @@ function draw() {
     fill(0)
     text(`Seconds: ${time.duration.seconds} ฒ `, mouseX, 10)
     text(`Minutes: ${time.duration.minutes}`, 10, 30)
-    blob(random(4), 100, 100)
+    blob(40, 100, 100)
+    blob(width / 2, height / 2, 100)
+    blob(width / 2, height / 2 + 280, 10)
+    blob(width / 3, height / 7 + 280, 47)
     // print(time )
     ticks = tick()
 }
