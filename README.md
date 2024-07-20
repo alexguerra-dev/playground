@@ -6,6 +6,11 @@
 
 ## Data
 
+- audio
+- csv
+- images
+- text
+
 ### Images
 
-I am trying to use `.jpg` as my file format.
+I am trying to use `.jpg` as my file format. But, it seems like a gif for animation would be good.
