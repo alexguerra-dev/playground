@@ -3,7 +3,7 @@
 let tick = 0
 
 function setup() {
-    createCanvas(400, 400)
+    createCanvas(1000, 1000)
 }
 
 function draw() {
