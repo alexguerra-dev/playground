@@ -1,18 +1,43 @@
 // This is the main file for the sketch
 
+let clock = 1000
+
+// let duration = 1000
+
+function secToMin(seconds) {
+    return seconds / 60
+}
+
+function minToSec(minutes) {
+    return minutes * 60
+}
+
 function robotEyes() {
-    fill(175, 0, 80)
+    fill(175, random(255), 80)
     strokeWeight(9)
     stroke(9)
-    ellipse(mouseX, height / 2, 400, 400)
+
+    ellipse(mouseX, height / 2, clock, 400)
+    fill(0)
+    ellipse(mouseX, height / 2, clock / 3, 400 / 0.6)
+    fill(175, random(255), 80)
+    fill(0)
 
     ellipse(100 + mouseY, height / 2, 400, 400)
+
+    ellipse(100 + mouseY, height / 2, 400, 400)
+    fill(0)
 }
 function setup() {
     createCanvas(windowWidth, windowHeight)
 
     // Basic setup for the sketch
     angleMode(DEGREES)
+
+    print('Hello, world! Please stand by for our manifesto...')
+
+    const theCurrentColor = colorList.teal
+    print(theCurrentColor)
 }
 
 function draw() {
@@ -21,14 +46,9 @@ function draw() {
     fill(175, 0, 80)
 
     robotEyes()
-    // // Some properties that can be set that effects the drawing.
-    // fill(255, 0, 0)
-    // stroke(0, 255, 0)
-    // strokeWeight(8)
-
-    // // Draw a rectangle at the top left corner of the screen.
-    // rect(0, 0, 100, 100)
 
     // Tick the clock
-    // clock.ticks += 1
+
+    print(clock)
+    clock--
 }
