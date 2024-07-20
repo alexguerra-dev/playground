@@ -1,13 +1,5 @@
 // utils.js
 
-const getTime = () => {
-    return new Date().getTime()
-}
-
-// const colors = [color(65, 51, 122)]
-
-console.log('utils.js')
-
 const colorList = {
     purple: [65, 51, 122],
     green: [51, 122, 65],
