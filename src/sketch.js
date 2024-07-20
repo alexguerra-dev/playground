@@ -20,6 +20,9 @@ const makeImageArray = (image) => {
             let b = image.pixels[index + 2]
             let brightness = (r + g + b) / 3
             row.push(brightness)
+            noStroke()
+            fill(r, g, b)
+            square(y * image.width, x * image.height, image.width)
         }
         imageArray.push(row)
     }
@@ -44,7 +47,7 @@ function draw() {
 
     let w = width / myImage.width
     let h = height / myImage.height
-    loadPixels()
+    myImage.loadPixels()
 
     for (let i = 0; i < myImage.width; i++) {
         for (let j = 0; j < myImage.height; j++) {
@@ -59,6 +62,8 @@ function draw() {
         }
     }
 
+    // const imageArrayFromFunction = makeImageArray(myImage)
+    // print(imageArrayFromFunction)
     clock.ticks += 1
     noLoop()
 }
