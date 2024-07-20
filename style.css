@@ -2,6 +2,9 @@ html,
 body {
     margin: 0;
     padding: 0;
+    background-color: green;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24pt;
 }
 
 canvas {
