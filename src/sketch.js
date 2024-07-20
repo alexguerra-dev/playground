@@ -4,16 +4,25 @@ let clock = {
     ticks: 0,
 }
 
-function setup() {
-    createCanvas(1000, 1000)
+let colors
 
-    print('setup')
+const drawFlower = (x, y, size, color) => {
+    fill(color)
+    ellipse(x, y, size, size)
+}
+
+function setup() {
+    createCanvas(windowWidth, windowHeight)
+
+    colors = colorList
 }
 
 function draw() {
-    background(20, 255, 60)
-
     print(clock.ticks)
+    print(colors['purple'])
+    drawFlower(100, 100, 100, colors['purple'])
+    drawFlower(200, 200, 100, colors['green'])
+    drawFlower(300, 300, 100, colors['red'])
 
     clock.ticks += 1
 }
