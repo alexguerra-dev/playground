@@ -15,16 +15,27 @@ const tick = () => {
     return time
 }
 
+const blob = (x, y, r) => {
+    fill(255, 0, 0)
+    noStroke()
+    ellipse(x, y, r, r)
+    ellipse(x + 70, y, r, r)
+    ellipse(x + 70, y, r + 40, r)
+    ellipse(x + 70, y + 30, r + 10, r + 40)
+}
+
 function setup() {
     print('setup called')
-    createCanvas(1000, 1000)
+    createCanvas(windowWidth, windowHeight)
     print('setup done')
 }
 
 function draw() {
-    background(220)
-
-    text(`Seconds: ${time.duration.seconds}`, 10, 10)
+    background(200)
+    fill(0)
+    text(`Seconds: ${time.duration.seconds} ฒ `, mouseX, 10)
     text(`Minutes: ${time.duration.minutes}`, 10, 30)
+    blob(random(4), 100, 100)
+    // print(time )
     ticks = tick()
 }
