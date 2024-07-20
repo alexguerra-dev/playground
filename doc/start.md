@@ -6,3 +6,5 @@ Go to the `startpoint` commit branch.
 
 - Flowers
 - Image Imports
+- Shapes
+  - Making functions to draw shapes
