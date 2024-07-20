@@ -9,6 +9,8 @@ const colorList = {
     orange: [122, 65, 51],
     pink: [122, 51, 122],
     teal: [51, 122, 122],
+    peach: [255, 90, 70],
+    fuschia: [175, 0, 80],
 }
 
 const palettes = [

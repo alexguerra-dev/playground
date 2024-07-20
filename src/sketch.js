@@ -1,9 +1,13 @@
 // This is the main file for the sketch
 
-let clock = {
-    ticks: 0,
-}
+function robotEyes() {
+    fill(175, 0, 80)
+    strokeWeight(9)
+    stroke(9)
+    ellipse(mouseX, height / 2, 400, 400)
 
+    ellipse(100 + mouseY, height / 2, 400, 400)
+}
 function setup() {
     createCanvas(windowWidth, windowHeight)
 
@@ -12,16 +16,19 @@ function setup() {
 }
 
 function draw() {
-    background(0)
+    background(255, 90, 70)
 
-    // Some properties that can be set that effects the drawing.
-    fill(255, 0, 0)
-    stroke(0, 255, 0)
-    strokeWeight(8)
+    fill(175, 0, 80)
 
-    // Draw a rectangle at the top left corner of the screen.
-    rect(0, 0, 100, 100)
+    robotEyes()
+    // // Some properties that can be set that effects the drawing.
+    // fill(255, 0, 0)
+    // stroke(0, 255, 0)
+    // strokeWeight(8)
+
+    // // Draw a rectangle at the top left corner of the screen.
+    // rect(0, 0, 100, 100)
 
     // Tick the clock
-    clock.ticks += 1
+    // clock.ticks += 1
 }
