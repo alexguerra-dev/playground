@@ -4,6 +4,11 @@ let clock = {
     ticks: 0,
 }
 
+const drawFlower = () => {
+    fill(255, 0, 0)
+    ellipse(0, 0, 100, 100)
+}
+
 function setup() {
     createCanvas(windowWidth, windowHeight)
     angleMode(DEGREES)
@@ -11,5 +16,6 @@ function setup() {
 
 function draw() {
     background(0)
+    drawFlower()
     clock.ticks += 1
 }
