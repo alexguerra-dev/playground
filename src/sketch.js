@@ -8,38 +8,14 @@ let myImage
 const density =
     '$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/|()1{}[]?-_+~<>i!lI;:,"^`\'.'
 
-const makeImageArray = (image) => {
-    let imageArray = []
-    image.loadPixels()
-    for (let y = 0; y < image.height; y++) {
-        let row = []
-        for (let x = 0; x < image.width; x++) {
-            let index = (x + y * image.width) * 4
-            let r = image.pixels[index]
-            let g = image.pixels[index + 1]
-            let b = image.pixels[index + 2]
-            let brightness = (r + g + b) / 3
-            row.push(brightness)
-            noStroke()
-            fill(r, g, b)
-            square(y * image.width, x * image.height, image.width)
-        }
-        imageArray.push(row)
-    }
-    return imageArray
-}
-
 function preload() {
     // Load any assets here
-    myImage = loadImage('data/images/dragon.jpg')
+    myImage = loadImage('data/images/smallDragon.jpg')
 }
 
 function setup() {
     createCanvas(windowWidth, windowHeight)
     angleMode(DEGREES)
-    print(myImage)
-    const theArrayOfImage = makeImageArray(myImage)
-    print(theArrayOfImage)
 }
 
 function draw() {
@@ -55,15 +31,15 @@ function draw() {
             const r = myImage.pixels[pixelIndex + 0]
             const g = myImage.pixels[pixelIndex + 1]
             const b = myImage.pixels[pixelIndex + 2]
-
+            const avg = (r + g + b) / 3
             noStroke()
-            fill(r, g, b)
-            square(i * w, j * h, w)
+            fill(avg)
+
+            textAlign(CENTER, CENTER)
+            text('G', i * w + w * 0.5, j * h + h * 0.5)
         }
     }
 
-    // const imageArrayFromFunction = makeImageArray(myImage)
-    // print(imageArrayFromFunction)
     clock.ticks += 1
     noLoop()
 }
