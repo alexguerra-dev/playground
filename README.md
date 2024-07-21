@@ -18,3 +18,7 @@ I am trying to use `.jpg` as my file format. But, it seems like a gif for animat
 ## Starting Point
 
 You can go to the `startpoint` branch.
+
+## Robot Faces
+
+Maybe the eyes can follow the mouse?
