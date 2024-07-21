@@ -3,6 +3,7 @@
 let clock = {
     ticks: 0,
 }
+
 let myImage
 
 const density =
@@ -10,7 +11,7 @@ const density =
 
 function preload() {
     // Load any assets here
-    myImage = loadImage('data/images/smallDragon.jpg')
+    myImage = loadImage('data/images/dragon.jpg')
 }
 
 function setup() {
@@ -24,15 +25,25 @@ function draw() {
     const h = height / myImage.height
     myImage.loadPixels()
     let asciiImage = ''
+
+    for (let i = 0; i < 10; i++) {
+        print('THis is number ' + i)
+
+        for (let j = 0; j < 10; j++) {
+            print('This is number ' + j)
+        }
+    }
+
     for (let i = 0; i < myImage.height; i++) {
         let row = ''
         for (let j = 0; j < myImage.width; j++) {
             const lengthOfDensityString = density.length
             const pixelIndex = (i + j * myImage.width) * 4
+
             const r = myImage.pixels[pixelIndex + 0]
             const g = myImage.pixels[pixelIndex + 1]
             const b = myImage.pixels[pixelIndex + 2]
-            print(r, g, b)
+
             const avg = (r + g + b) / 3
 
             const densityCharacterIndex = floor(
