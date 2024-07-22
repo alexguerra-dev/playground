@@ -7,6 +7,13 @@
 I would like to get my zoom and font size a way that works for me. I kind of like chunky icons.
 But, I also like the editor to feel a little minimalistic.
 
+### Background
+
+I like the idea of having an image for the background. I should see if there is a `.vscode` folder in my home directory. I could make a folder for the background images and then link to them.
+
+> [!tip] Background
+> Is there a folder I can use to hold my background images?
+
 ### Themes
 
 ### Extensions
