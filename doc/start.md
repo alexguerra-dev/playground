@@ -14,3 +14,5 @@ Go to the `startpoint` commit branch.
 I am always trying to get my vscode setup nice. This time I am working on a minumalistic setup.
 
 ### Chat
+
+`Shift + Cmd + i` to open the chat window.

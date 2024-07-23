@@ -46,3 +46,11 @@ This is still another test of me using voice to text.
 > It will have a log of all the text anyway. So, there is no reason to keep the window open.
 
 ### Profiles
+
+### My Keybindings
+
+- show/hide finder: `\<leader\> f f`
+
+I am not sure what `:bprevious` and `:bnext` do. I think they are for switching between buffers. I am not sure what a buffer is.
+
+I think it would be good to be able to stage all changes and then go to the source control tab. I have changed the focus git keybinding to `Shift + Cmd + g g`. I can remember the _g_ is for git. To stage all changes I can use `Shift + Cmd + g s`
