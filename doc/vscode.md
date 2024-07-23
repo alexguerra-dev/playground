@@ -7,12 +7,17 @@
 I would like to get my zoom and font size a way that works for me. I kind of like chunky icons.
 But, I also like the editor to feel a little minimalistic.
 
+> [!question] Do I need to know if I have changed a line?
+> Does it make a difference if I know I have changed a line? I a probably going to commit the changes regardless of the number of changes I have made to the project.
+> I think the only thing that I really need to know is that a change has been made.
+
 ### Background
 
 I like the idea of having an image for the background. I should see if there is a `.vscode` folder in my home directory. I could make a folder for the background images and then link to them.
 
 > [!tip] Background
 > Is there a folder I can use to hold my background images?
+> There is infact a `.vscode` folder in my home directory. I am not sure how volitile it is. So I am going to keep my images in `~/Pictures/vscode`. This seems like a good out of the way place and I can keep it in source control.
 
 ### Themes
 
