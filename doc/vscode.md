@@ -60,3 +60,9 @@ I think that is enough.thing to work.going to get this dictation thing to work.
 I am going to get this Dictation thing to work.I'm going to try a different dictation software.
 I think the murmur type might be more responsive in terms of how fast the application opens.
 I would like to keep track of how many AI tokens I have with SetApp.
+Thank you for watching!
+Thank you for watching.
+If you have any questions or other problems, please post them in the comments.
+Going to double tap my left shift key will open up my dictation.
+Double tapping again will close it and paste the content of the transcribed dictation.
+I kind of like the idea of chorded or tapping combos for doing common computer tasks.
