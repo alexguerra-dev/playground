@@ -54,3 +54,9 @@ This is still another test of me using voice to text.
 I am not sure what `:bprevious` and `:bnext` do. I think they are for switching between buffers. I am not sure what a buffer is.
 
 I think it would be good to be able to stage all changes and then go to the source control tab. I have changed the focus git keybinding to `Shift + Cmd + g g`. I can remember the _g_ is for git. To stage all changes I can use `Shift + Cmd + g s`
+
+I think that is enough.thing to work.going to get this dictation thing to work.
+
+I am going to get this Dictation thing to work.I'm going to try a different dictation software.
+I think the murmur type might be more responsive in terms of how fast the application opens.
+I would like to keep track of how many AI tokens I have with SetApp.
